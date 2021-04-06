@@ -4,7 +4,7 @@ module.exports.configureDefault = function (options, defaults) {
             options[key] = module.exports.configureDefault(options[key], defaults[key])
             continue;
         }
-        options[key] = options[key] ?? defaults[key]
+        options[key] = typeof options[key] === 'undefined' ? defaults[key] : options[key];
     }
     return options
 }

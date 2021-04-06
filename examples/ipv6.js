@@ -23,7 +23,7 @@ console.log('Connecting to server with ipv6');
 
         console.log('Alive, and in game')
 
-        await player.spawn('IPV6 Working', /* party id */);
+        await player.spawn('IPV6 Works',/* party id, so like 1239 (not link) */);
 
         player.levelUp(40);
         player.moveTo(0, 0);

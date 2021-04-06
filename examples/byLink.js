@@ -20,7 +20,7 @@ console.log('Connecting to server via link');
 
         console.log('Alive, and in game')
 
-        await player.spawn('SBX Works', /* party id */);
+        await player.spawn('SBX Works', /* party id, so like 1239 (not link) */);
 
         player.levelUp(40);
         player.moveTo(0, 0);

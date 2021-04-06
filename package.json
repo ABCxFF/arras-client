@@ -1,0 +1,29 @@
+{
+  "name": "arrasclient",
+  "version": "1.0.0",
+  "description": "Interface to interact with arras.io api and game servers",
+  "main": "index.js",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "ws": "^7.4.4"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.6",
+    "jsdoc-to-markdown": "^7.0.1"
+  },
+  "scripts": {
+    "doc": "jsdoc2md \"src/**/*.js\" > DOCS.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/ABCxFF/arras-client"
+  },
+  "keywords": [
+    "arras",
+    "websocket",
+    "headless",
+    "api"
+  ],
+  "author": "ABC",
+  "license": "GPL-3.0"
+}

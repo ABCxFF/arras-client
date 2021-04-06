@@ -146,9 +146,26 @@ class Player extends EventEmitter {
     get isDead() {
         return this.world.isDead
     }
+    /**
+     * Looks at a specific location
+     * @param {Object|number} target The target location
+     * @param {number} target.x
+     * @param {number} target.y
+     * @param {number} [y] The y pos, if used this way
+     * @return {Player}
+     */
+    lookAt(target, y=false) {
+        if (!this.world.isAlive) return;
+        if (y !== false) target = {
+            x: target,
+            y: y
+        }
+
+        this.sendInput((this.input.x = target.x - this.world.selfEnt.x), (this.input.y = target.y - this.world.selfEnt.y), this.input.flags);
+    }
 
     /**
-     * Sends a move to packe tto a specific location
+     * Sends a move to packet to a specific location
      * @param {Object|number} target The target location
      * @param {number} target.x
      * @param {number} target.y
@@ -165,7 +182,7 @@ class Player extends EventEmitter {
         let dir = Math.round(Math.atan2(target.y - this.world.selfEnt.y, target.x - this.world.selfEnt.x) * 180 / Math.PI * (2 / 45)) * (45 / 2);
         dir = ((dir % 360) + 360) % 360; // keep positive in range
         this.input.flags &= ~15;
-        return this.sendInput(target.x - this.world.selfEnt.x, target.y - this.world.selfEnt.y, (this.input.flags = ({
+        return this.sendInput(this.input.x, this.input.y, (this.input.flags = ({
             "0": 0b1000, // 1 = down, 2 = up, 4 = left, 8 = right,
             "22.5": 0b1000 ^ ((this.tick & 1) << 1),
             "45": 0b1010,

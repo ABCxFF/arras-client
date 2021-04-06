@@ -84,7 +84,7 @@ class Player extends EventEmitter {
      * @param  {...string|number} path Tank path, list of names or numbers
      */
     upgradeTo(...path) {
-        if (!this.mockups) throw new RangeError('No mockups loaded. Internal error');
+        if (!this.world.mockups) throw new RangeError('No mockups loaded. Internal error');
 
         for (const t of path) {
             const id = typeof t === 'number' ? t : this.world.mockups.findIndex(def => def.name === t);

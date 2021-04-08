@@ -15,5 +15,5 @@ jobs:
     steps:
     - uses: actions/setup-node@v1
     - uses: actions/checkout@v1
-    - run: npm run doc
     - run: npm i
+    - run: npm run doc

@@ -13,7 +13,7 @@
 			vx: Number,
 			vy: Number
 		}
-		bulletSpeed
+		bulletSpeed: Number
 
 */
 function autoAim(player, target, bulletSpeed) {

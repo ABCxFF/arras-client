@@ -26,7 +26,7 @@ function autoAim(player, target, bulletSpeed) {
 	const distance = Math.sqrt((direction.x ** 2) + (direction.y ** 2));
 
 	// ax^2 + bx + c = 0
-	const a = ((target.vx ** 2) + target.vy ** 2) - (bulletSpeed ** 2));
+	const a = ((target.vx ** 2) + (target.vy ** 2) - (bulletSpeed ** 2));
 	const b = (2 * (direction.x * target.vx + direction.y * target.vy));
 	const c = ((direction.x ** 2) + (direction.y ** 2));
 	

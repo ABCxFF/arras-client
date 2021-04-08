@@ -26,8 +26,9 @@ function autoAim(player, target, bulletSpeed, type = "b") {
 	const distance = Math.sqrt((direction.x ** 2) + (direction.y ** 2));
 	const radian = Math.atan2(direction.y, direction.x);
 	const targetSpeed = Math.sqrt((target.vx ** 2) + (target.vy ** 2));
+	
+	// ranch
 	let time = 0.0;
-
 	switch (type) {
 		
 		// type a
@@ -77,6 +78,13 @@ function autoAim(player, target, bulletSpeed, type = "b") {
 				console.error("hit impossible (imaginary number or negative number)");
 				time = 0.0;
 			}
+			break;
+		}
+
+		// unknown
+		default: {
+			console.error("why lol");
+			time = 0.0;
 			break;
 		}
 

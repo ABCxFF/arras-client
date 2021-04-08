@@ -1,6 +1,6 @@
 /*
 
-	Auto Aim Function
+	Auto Aim
 
 	Information required for arguments
 		player {

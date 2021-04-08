@@ -11,8 +11,8 @@ on:
 
 jobs:
   document:
-
     runs-on: ubuntu-latest
     steps:
-    - run: cd ..
+    - uses: actions/setup-node@v1
+    - uses: actions/checkout@v1
     - run: npm run doc

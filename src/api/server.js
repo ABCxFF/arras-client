@@ -96,29 +96,32 @@ const gamemodeTable = [
     }
     ]
 ];
-
 const regionTable = {
     xyz: ["Local", "Localhost", null],
     unk: ["Unknown", "Unknown", null],
     svx: ["US West", "Silicon Valley, CA, US", -7],
     lax: ["US West", "Los Angeles, CA, US", -7],
     dal: ["USA", "Dallas, TX, US", -5],
-    kci: ["USA", "Kansas City, MO, US", -5],
+    kci: ["USA",
+        "Kansas City, MO, US", -5
+    ],
     vin: ["US East", "Vint Hill, VA, US", -4],
     mtl: ["US East", "Montreal, CA", -4],
     lon: ["Europe", "London, UK", 1],
     fra: ["Europe", "Frankfurt, DE", 2],
+    fsn: ["Europe", "Falkenstein, DE", 2],
     sgp: ["Asia", "Singapore", 8]
 };
 const hostTable = {
     z: ["Private", null],
     x: ["Local", null],
     glitch: ["Glitch", 10],
-    vultr: ["Vultr", 30],
     buyvm: ["BuyVM", 15],
     extravm: ["ExtraVM", 40],
+    hetzner: ["Hetzner", 50],
     ovh: ["OVH", 45],
-    wsi: ["WSI", 50]
+    wsi: ["WSI", 50],
+    vultr: ["Vultr", 30]
 }
 
 class Server {

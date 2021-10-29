@@ -37,7 +37,7 @@
 
 <dl>
 <dt><a href="#GameServerData">GameServerData</a> : <code>Object</code></dt>
-<dd><p>Server as defined by api status/ endpoint</p>
+<dd><p>Server as defined by api status / endpoint</p>
 </dd>
 <dt><a href="#GameOptions">GameOptions</a> : <code>Object</code></dt>
 <dd></dd>
@@ -62,7 +62,7 @@
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [allowCache] | <code>boolean</code> | <code>true</code> | Determines whether or not you you allow request caching, defaults to `true` |
+| [allowCache] | <code>boolean</code> | <code>true</code> | Determines whether or not you allow request caching, defaults to `true` |
 
 <a name="API+fetch"></a>
 
@@ -84,7 +84,7 @@ Fetches all servers and returns a server list object
 <a name="API+fetchClientCount"></a>
 
 ### apI.fetchClientCount() ⇒ <code>Promise.&lt;number&gt;</code>
-Fetches the arrasio global client count
+Fetches the arras.io global client count
 
 **Kind**: instance method of [<code>API</code>](#API)  
 <a name="Server"></a>
@@ -145,7 +145,7 @@ Determines if the server is online
 <a name="Server+hash"></a>
 
 ### server.hash : <code>string</code>
-Server Hash, used to retrieve link
+Server hash, used to retrieve link
 
 **Kind**: instance property of [<code>Server</code>](#Server)  
 **Read only**: true  
@@ -431,7 +431,7 @@ Levels up the player
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| [levels] | <code>number</code> | <code>45</code> | Amount of levels to level up |
+| [levels] | <code>number</code> | <code>45</code> | Number of levels to level up |
 
 <a name="Player+upgradeStats"></a>
 
@@ -462,7 +462,7 @@ Upgrades you to a tank - assumption is you are basic tank
 <a name="Player+spawn"></a>
 
 ### player.spawn(name, [party], [grecaptcha])
-Spanw into the game
+Spawn into the game
 
 **Kind**: instance method of [<code>Player</code>](#Player)  
 
@@ -499,7 +499,7 @@ Sends an input / cmd packet
 <a name="Player+moveTo"></a>
 
 ### player.moveTo(target, [y])
-Sends a move to packe tto a specific location
+Sends a move to packet to a specific location
 
 **Kind**: instance method of [<code>Player</code>](#Player)  
 
@@ -744,7 +744,7 @@ Generates a rotator around a packet
 <a name="GameServerData"></a>
 
 ## GameServerData : <code>Object</code>
-Server as defined by api status/ endpoint
+Server as defined by api status / endpoint
 
 **Kind**: global typedef  
 **Properties**
